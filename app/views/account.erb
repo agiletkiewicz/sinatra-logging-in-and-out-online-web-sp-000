@@ -7,10 +7,10 @@
   </head>
   <body id="page-top">
     
-    <% if Helpers.is_logged_in? %>
+    <% if Helpers.is_logged_in?(session) %>
     
     
-    Welcome <%= Helpers.current_user.username %>
+    Welcome <%= Helpers.current_user(session).username %>
     
     
     <a href="/logout">Log Out</a>
