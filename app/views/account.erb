@@ -7,7 +7,7 @@
   </head>
   <body id="page-top">
     
-    if <% Helpers.is_logged_in? %>
+    <% if Helpers.is_logged_in? %>
     
     
     Welcome <%= Helpers.current_user.username %>
@@ -17,7 +17,7 @@
     
     <% else %> 
     
-    <a href="/">Homepage</a>
+    <a href="/">Home page</a>
     
     <% end %>
     
